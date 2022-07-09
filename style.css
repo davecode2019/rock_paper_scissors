@@ -1,3 +1,62 @@
+/* BORDER SWITCH FOR DESIGN */
+
+/* * {
+  border: 1px solid red;
+} */
+
+/* GENERAL STYLES */
+
 body {
+  margin: 0;
+  padding: 0;
+  background-color: #a8a8a8;
   font-family: "Cairo", sans-serif;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  color: #525252;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 50px;
+  font-weight: 900;
+  color: #525252;
+}
+
+button {
+  color: #525252;
+  border: 2px solid #525252;
+  border-radius: 5px;
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+/* BUTTON AREA */
+
+.button-area {
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.choice {
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+  font-size: 30px;
+  font-weight: 900;
 }

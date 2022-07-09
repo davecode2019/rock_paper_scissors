@@ -42,25 +42,28 @@ const playRound = (playerSelection) => {
   let computerSelection = computerPlay();
   let result = calculateWinner(playerSelection, computerSelection);
   if (result === 0) {
-    console.log("Draw!");
+    resultText = "Draw!";
   } else if (result === 1) {
-    console.log(`Computer wins, ${computerSelection} beats ${playerSelection}`);
+    resultText = `Computer wins, ${computerSelection} beats ${playerSelection}`;
     computerScore++;
   } else {
-    console.log(`Player wins, ${playerSelection} beats ${computerSelection}`);
+    resultText = `Player wins, ${playerSelection} beats ${computerSelection}`;
     playerScore++;
   }
-  console.log(`Computer: ${computerScore}`);
-  console.log(`Player: ${playerScore}`);
+  scoreText = `Computer ${computerScore} - ${playerScore} Player`;
 };
 
 let playerScore = 0;
 let computerScore = 0;
+let resultText = "";
+let scoreText = "";
 
 const buttons = document.querySelectorAll("button");
 
 buttons.forEach((button) =>
   button.addEventListener("click", function (e) {
-    playRound(e.target.className);
+    playRound(e.target.id);
+    console.log(resultText);
+    console.log(scoreText);
   })
 );
