@@ -75,6 +75,11 @@ header h1 {
   font-weight: 900;
 }
 
+.winner-text {
+  font-size: 40px;
+  font-weight: 700;
+}
+
 /* GAME AREA */
 
 .game-area {
@@ -114,6 +119,13 @@ header h1 {
   color: #525252;
   border: 2px solid #525252;
   border-radius: 5px;
+  transition: all 0.07s ease;
+}
+
+.token-win {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
 }
 
 .player-score,
@@ -132,10 +144,19 @@ header h1 {
   margin-top: 30px;
 }
 
-.info-text {
+.info-text,
+.info-text2 {
   flex: 0 0 auto;
   font-size: 30px;
   margin: 0;
+}
+
+.play-again {
+  height: 75px;
+  width: 300px;
+  margin: 10px;
+  font-size: 40px;
+  font-weight: 900;
 }
 
 /* FOOTER */
